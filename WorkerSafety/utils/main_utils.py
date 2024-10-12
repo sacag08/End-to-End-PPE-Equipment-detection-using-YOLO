@@ -3,8 +3,8 @@ import sys
 import yaml
 import base64
 
-from WorkerSafety.exception import CustomException
-from WorkerSafety.logger import logging
+from workerSafety.exception import CustomException
+from workerSafety.logger import logging
 
 def read_yaml_file(file_path:str)-> dict:
     try:

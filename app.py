@@ -1,5 +1,5 @@
-from WorkerSafety.logger import logging
-from WorkerSafety.exception import CustomException
+from workerSafety.logger import logging
+from workerSafety.exception import CustomException
 import sys
 
 logging.info("welcome")
