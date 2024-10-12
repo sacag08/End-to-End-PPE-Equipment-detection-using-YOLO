@@ -9,4 +9,4 @@ def test():
     except Exception as e:
         logging.info("Divide by Zero")
         raise CustomException(e,sys)
-test()
+test() 

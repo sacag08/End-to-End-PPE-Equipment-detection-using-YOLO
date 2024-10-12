@@ -1,1 +1,4 @@
-# End-to-End-waste-detection-using-YOLO
+# End-to-End-PPE-Equipment-detection-using-YOLO
+
+## Workflows
+
