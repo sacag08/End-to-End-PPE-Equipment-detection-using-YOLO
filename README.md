@@ -52,7 +52,7 @@ To set up the project locally or on an EC2 instance, follow these steps:
 
 1. **Clone the Repository:**
    \`\`\`bash
-   git clone https://github.com/your-repo/safety-compliance-detection.git
+   git clone https://github.com/sacag08/safety-compliance-detection.git
    cd safety-compliance-detection
    \`\`\`
 
