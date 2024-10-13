@@ -51,13 +51,6 @@ Once deployed, the app can:
 
 ---
 
-## Future Enhancements
-- Integrating **additional safety gear classes** such as face shields and harnesses.
-- **Edge deployment** using IoT devices for on-premise safety monitoring.
-- Improving model accuracy using **transfer learning** and additional data augmentation techniques.
-
----
-
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
