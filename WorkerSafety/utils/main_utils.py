@@ -29,10 +29,13 @@ def write_yaml_file(file_path: str,content: object, replace: bool = False) -> No
         raise CustomException(e,sys)
     
 def decodeImage(imgstring,fileName):
-    imgdata = base64.b64decode(imgstring)
-    with open("./data/",fileName,'wb') as f:
-        f.write(imgdata)
-        f.close()
+    try:
+        imgdata = base64.b64decode(imgstring,validate=True)
+        with open("./data/"+fileName,'wb') as f:
+            f.write(imgdata)
+            f.close()
+    except Exception as e:
+        raise CustomException(e,sys)
 
 def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath,'rb') as f:

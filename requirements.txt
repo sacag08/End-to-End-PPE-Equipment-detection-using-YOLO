@@ -40,6 +40,7 @@ seaborn>=0.11.0
 
 # Deploy ----------------------------------------------------------------------
 setuptools>=70.0.0 # Snyk vulnerability fix
+flask
 # tritonclient[all]~=2.24.0
 
 # Extras ----------------------------------------------------------------------
@@ -48,6 +49,6 @@ setuptools>=70.0.0 # Snyk vulnerability fix
 # albumentations>=1.0.3
 # pycocotools>=2.0.6  # COCO mAP
 kiwisolver
-
-
+gdown
+flask_cors
 -e .

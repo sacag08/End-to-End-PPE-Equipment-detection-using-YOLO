@@ -53,6 +53,7 @@ coverage.xml
 cover/
 test/*
 yolov5/*
+safty/*
 # Translations
 *.mo
 *.pot
