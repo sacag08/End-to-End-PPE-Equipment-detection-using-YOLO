@@ -37,49 +37,6 @@ The overall workflow of the project is modular and consists of the following com
    - **Docker** was used to containerize the application, ensuring a consistent and scalable environment for deployment.
 
 ---
-
-## Installation and Setup
-
-To set up the project locally or on an EC2 instance, follow these steps:
-
-### Prerequisites
-- Python 3.10
-- Docker
-- AWS account with access to EC2 instances
-- Git
-
-### Steps
-
-1. **Clone the Repository:**
-   \`\`\`bash
-   git clone https://github.com/sacag08/safety-compliance-detection.git
-   cd safety-compliance-detection
-   \`\`\`
-
-2. **Install Required Dependencies:**
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
-
-3. **Train the Model (Optional):**
-   If you want to retrain the model, you can follow the training steps in the \`training\` folder:
-   \`\`\`bash
-   python train.py --epochs 150 --data ./data/roboflow.yaml --weights yolov5s.pt
-   \`\`\`
-
-4. **Deploy Using Docker:**
-   To deploy the app using Docker, build the container and run it:
-   \`\`\`bash
-   docker build -t safety-detection .
-   docker run -p 8080:8080 safety-detection
-   \`\`\`
-
-5. **Deploy on AWS EC2:**
-   - Set up an EC2 instance with Docker installed.
-   - Transfer the Docker image to your EC2 instance and run the container.
-
----
-
 ## How to Use
 
 Once deployed, the app can:
