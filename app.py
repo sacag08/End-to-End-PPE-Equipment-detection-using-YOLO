@@ -8,8 +8,6 @@ from flask_cors import CORS, cross_origin
 
 from workerSafety.constant.application import APP_HOST, APP_PORT  
 
-
-
 app = Flask(__name__)
 CORS(app)
 
@@ -34,7 +32,7 @@ def predictRoute():
         image = request.json['image']
         decodeImage(imgstring=image, fileName=wsapp.filename)
 
-        os.system("cd yolov5/ && python detect.py --weights best.pt --img 416 --conf 0.5 --source ../data/inputImage.jpg")
+        os.system("cd yolov5/ && python detect.py --weights last.pt --img 416 --conf 0.5 --source ../data/inputImage.jpg")
 
         opencodedbase64 = encodeImageIntoBase64("yolov5/runs/detect/exp/inputImage.jpg")
         result = {"image": opencodedbase64.decode('utf-8')}
