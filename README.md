@@ -26,10 +26,10 @@ The overall workflow of the project is modular and consists of the following com
 
 3. **Pipeline Setup:**
    - The pipeline is organized into the following key files:
-     - **constants.py:** Defines key constants such as paths, model configurations, and class labels.
-     - **entity.py:** Defines key entities like datasets, model configurations, and inputs/outputs.
-     - **components.py:** Contains modular components for data ingestion, preprocessing, and model evaluation.
-     - **pipelines.py:** Combines all the components into a seamless workflow for real-time image processing.
+     - **constants:** Defines key constants such as paths, model configurations, and class labels.
+     - **entity:** Defines key entities like datasets, model configurations, and inputs/outputs.
+     - **components** Contains modular components for data ingestion, preprocessing, and model evaluation.
+     - **pipelines:** Combines all the components into a seamless workflow for real-time image processing.
      - **app.py:** The entry point for running the detection model on new data or video streams.
 
 4. **Deployment:**
