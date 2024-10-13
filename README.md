@@ -1,6 +1,3 @@
-# Creating README.md file content for GitHub
-
-content = """
 # Real-time Worker Safety Compliance Detection using YOLOv5
 
 ## Project Overview
