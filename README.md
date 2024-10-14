@@ -9,7 +9,8 @@ This project aims to enhance worker safety in industrial environments by impleme
 - **Training:** The YOLOv5s model was trained for 150 epochs to optimize performance for safety compliance detection.
 - **Real-time Detection:** Provides real-time predictions and alerts for safety compliance breaches by processing images and video feeds.
 - **Deployment:** The model is deployed on **AWS EC2** in a Docker container for scalability and efficiency.
-
+- **CI/CD Pipeline:** The project implements a **CI/CD deployment pipeline** using GitHub Actions to automate the testing and deployment process.
+- 
 ---
 
 ## Workflow and Pipeline
@@ -32,9 +33,12 @@ The overall workflow of the project is modular and consists of the following com
      - **pipelines:** Combines all the components into a seamless workflow for real-time image processing.
      - **app.py:** The entry point for running the detection model on new data or video streams.
 
-4. **Deployment:**
-   - The trained YOLOv5 model is deployed on an **AWS EC2 instance**.
-   - **Docker** was used to containerize the application, ensuring a consistent and scalable environment for deployment.
+4. **CI/CD Deployment:**
+   - A **CI/CD pipeline** is set up using **GitHub Actions** for automated deployment and testing.
+   - The pipeline ensures seamless integration of code changes, running automated tests, and deploying the updated model to the AWS EC2 instance.
+   - The GitHub workflow files handle tasks like Docker image building, pushing to EC2, and rolling out updates.
+
+
 
 ---
 ## How to Use
@@ -46,7 +50,7 @@ Once deployed, the app can:
 ---
 
 ## Model Performance
-- The YOLOv5s model achieved **X% mAP (mean Average Precision)** on the test dataset.
+- The YOLOv5s model achieved **85.44% mAP (mean Average Precision)** on the test dataset.
 - The model is optimized for real-time detection with a minimal delay between frame capture and prediction.
 
 ---
